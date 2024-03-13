@@ -15,10 +15,10 @@ class Car:
             self.disponible_color == wanted_color
             print("La couleur", wanted_color, "est bien disponible")
 
-    def display_infos(self, wanted_km):
+    def display_infos(self):
         print("Ma voiture est une", self.brand, "modéle", self.model, "elle à été fabriquée en", self.fabrication_year, "elle est", self.wanted_color, "et à", self.km, "kilométre")
 
-    def drive(self):
+    def drive(self,wanted_km):
         if self.km >= 350000:
             print("Votre voiture à atteint les", self.km, "l'obsolécense programmée vient donc de la ratrapper")
         elif self.brand.lower == "peugeot"|"renault"|"dacia":
