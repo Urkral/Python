@@ -32,7 +32,7 @@ class Car:
 
 
 car1 = Car(_brand = "Mercedes", _model="GLS", _car_number = 12, _fabrication_year = 2023, _disponible_color = ["verte", "bleu", "rouge", "noir"], _km =0)
-wanted_color = input("Quelle couleur désirez vous ?")
+wanted_color = int(input("Quelle couleur désirez vous ?"))
 wanted_km = int(input("Combien de kilométre désirez vous faire ?"))
 
 car1._drive(wanted_km)
